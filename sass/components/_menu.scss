@@ -1,0 +1,8 @@
+.menu {
+  display: inline-flex;
+  line-height: 31px;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+  position: relative;
+}

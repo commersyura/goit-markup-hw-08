@@ -1,0 +1,224 @@
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 528px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-container {
+  padding: 40px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mf-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mf-margin {
+  margin-bottom: 10px;
+}
+
+.mf-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
+  margin-bottom: 4px;
+}
+
+.mf__input-text {
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  line-height: 1.17px;
+  letter-spacing: 0.01em;
+}
+
+.modal-form__name {
+  position: relative;
+}
+
+.mf-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  fill: rgba(33, 33, 33, 1);
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__name {
+  position: relative;
+}
+
+.mf-padding-svg {
+  padding: 12px 0 12px 42px;
+}
+
+.mf__input-boder {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mf__input-height {
+  height: 40px;
+}
+
+.modal-form textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  border-radius: 4px;
+  transition: border 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mf-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.mf-margin-comment {
+  margin-bottom: 20px;
+}
+
+.mf-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.mf-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+
+.mf-checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 4px;
+}
+
+.mf-checkbox-label:hover,
+.mf-checkbox-label:focus {
+  cursor: pointer;
+}
+
+.check-box-condition:checked + .mf-checkbox-label::before {
+  background-image: url(../images/check-mark.svg);
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid rgba(33, 33, 33, 0);
+}
+
+.mf-policy {
+  color: #2196f3;
+}
+
+.mf-element:hover input,
+.mf-element:focus input {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.mf-element:hover .mf-svg,
+.mf-element:focus-within .mf-svg {
+  cursor: pointer;
+  fill: #2196f3;
+}
+
+.mf__input-point:hover,
+.mf__input-point:focus {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.modal-svg {
+  width: 11px;
+  height: 11px;
+  fill: rgba(0, 0, 0, 1);
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal-svg {
+  top: 50%;
+  left: 50%;
+  fill: #000000;
+  width: 17px;
+  height: 17px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  transition-property: fill;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal-svg:hover,
+.close-modal-svg:focus {
+  cursor: pointer;
+  fill: #2196f3;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000033;
+  transition-property: opacity, visibility;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

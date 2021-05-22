@@ -1,0 +1,65 @@
+.portfolio__items {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portfolio__items:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio__items-project {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+  align-content: left;
+}
+
+.portfolio__items {
+  text-align: left;
+}
+
+.team__name-portfolio {
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  box-sizing: border-box;
+  flex-basis: calc((100% - 9 * 30px) / 9);
+}
+.team__name-portfolio:ntn-child(3n + 1) {
+  margin-left: 0;
+}
+.team__name-portfolio-link {
+  text-decoration: none;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.team__name-portfolio-link:hover .team__thumb-description,
+.team__name-portfolio-link:focus .team__thumb-description {
+  transform: translateY(0);
+}
+
+.team__name-portfolio-link:hover,
+.team__name-portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio__items-name-project {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.team__name-portfolio:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}

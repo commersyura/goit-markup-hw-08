@@ -1,0 +1,25 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
+@import "./base/card-set";
+
+@import "./components/address";
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/titles";
+@import "./components/menu";
+@import "./components/socials-icons";
+@import "./components/modal-form";
+
+@import "./layouts/sections";
+@import "./layouts/about";
+@import "./layouts/bottom-panel";
+@import "./layouts/castomers";
+@import "./layouts/gallery";
+@import "./layouts/navigations";
+@import "./layouts/team";
+@import "./layouts/top-panel";
+@import "./layouts/portfolio-page";
