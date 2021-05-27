@@ -4,14 +4,42 @@
   justify-content: flex-start;
 }
 .container-footer {
-  width: 231px;
-  height: 132px;
-  display: block;
+  display: flex;
+
+  // width: 231px;
+  // height: 132px;
+  // display: block;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+.footer__address-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 .subscribe-email {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .subscribe-email input::placeholder {
@@ -37,6 +65,9 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background: #2f303a;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 .bot-sub-email-box:hover,
 .bot-sub-email-box:focus {
@@ -57,6 +88,15 @@
   background-color: var(--dark-bg);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 1200px) {
+    height: 252px;
+  }
 }
 .invite-item {
   text-align: left;

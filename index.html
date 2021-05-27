@@ -23,7 +23,7 @@
           <a class="logo page-header__logo" href="./index.html"
             ><span class="logo-studio">Web</span>Studio</a
           >
-          <!-- <ul class="menu menu__list">
+          <ul class="menu menu__list">
             <li class="menu__item">
               <a class="link link--nav-decoration" href="#about">Студия</a>
             </li>
@@ -35,10 +35,10 @@
             <li class="menu__item">
               <a class="link header-decoration" href="#contacts">Контакты</a>
             </li>
-          </ul> -->
+          </ul>
         </nav>
         <button class="menu-open">0</button>
-        <!-- <ul class="menu list contacts__list">
+        <ul class="menu list contacts__list">
           <li class="menu__item contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
               <svg class="auth-nav-icon" width="16" height="12">
@@ -55,11 +55,34 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
       </div>
       <div class="mobile-menu is-hidden">
         <div class="container">
-          <button class="menu-close">x</button>
+          <button
+            type="button"
+            class="menu-close"
+            aria-expanded="false"
+            aria-controls="mob-menu"
+            menu-open
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка мобильного меню"
+              class="cross-icon"
+            >
+              <use href="./images/icons/sprite.svg#cross"></use>
+            </svg>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка мобильного меню"
+              class="burger-icon"
+            >
+              <use href="./images/icons/sprite.svg#burger"></use>
+            </svg>
+          </button>
           <ul class="mobile-menu-list list">
             <li><a class="link" href="">Студия</a></li>
             <li><a class="link" href=""></a>Портфолио</li>
@@ -573,101 +596,105 @@
 
     <!-- ФУТЕР -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-div container">
         <div class="container-footer">
-          <a class="logo-botom" href="./index.html"
-            ><span class="logo-studio">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="address-item-place">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li class="footer-link-address">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+          <div class="footer__address-block">
+            <a class="logo-botom" href="./index.html"
+              ><span class="logo-studio">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="address-item-place">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="list">
+                <li class="footer-link-address">
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-link-address">
+                  <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invite-section">
+            <h3 class="invite-item">присоединяйтесь</h3>
+            <ul class="list social-icons__footer">
+              <li class="social-icons__item-footer">
+                <a
+                  href=""
+                  class="invite-icons-link__footer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="invite-icons-svg">
+                    <use
+                      href="./images/icons/sprite.svg#icon-instagram-1"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-link-address">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="social-icons__item-footer">
+                <a
+                  href=""
+                  class="invite-icons-link__footer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="invite-icons-svg">
+                    <use href="./images/icons/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item-footer">
+                <a
+                  href=""
+                  class="invite-icons-link__footer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="invite-icons-svg">
+                    <use href="./images/icons/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item-footer">
+                <a
+                  href=""
+                  class="invite-icons-link__footer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="invite-icons-svg">
+                    <use href="./images/icons/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="invite-section">
-          <h3 class="invite-item">присоединяйтесь</h3>
-          <ul class="list social-icons__footer">
-            <li class="social-icons__item-footer">
-              <a
-                href=""
-                class="invite-icons-link__footer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="invite-icons-svg">
-                  <use href="./images/icons/sprite.svg#icon-instagram-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item-footer">
-              <a
-                href=""
-                class="invite-icons-link__footer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="invite-icons-svg">
-                  <use href="./images/icons/sprite.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item-footer">
-              <a
-                href=""
-                class="invite-icons-link__footer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="invite-icons-svg">
-                  <use href="./images/icons/sprite.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__item-footer">
-              <a
-                href=""
-                class="invite-icons-link__footer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="invite-icons-svg">
-                  <use href="./images/icons/sprite.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe-email">
-          <label for="sub-email" class="bot-sub-email-label"
-            >Подпишитесь на рассылку
-          </label>
-          <input
-            type="text"
-            name="sub-email"
-            id="sub-email"
-            class="bot-sub-email-box"
-            placeholder="E-mail"
-          />
-        </div>
-        <div class="bot-telegram-btn">
-          <button type="submit" class="sub-telegram-btn">
-            <div class="sub-telegram-btn-text">Подписаться</div>
-            <svg class="bot-telegram-svg">
-              <use href="./images/icons/sprite6.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          </div>
+          <div class="subscribe-email">
+            <label for="sub-email" class="bot-sub-email-label"
+              >Подпишитесь на рассылку
+            </label>
+            <input
+              type="text"
+              name="sub-email"
+              id="sub-email"
+              class="bot-sub-email-box"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="bot-telegram-btn">
+            <button type="submit" class="sub-telegram-btn">
+              <div class="sub-telegram-btn-text">Подписаться</div>
+              <svg class="bot-telegram-svg">
+                <use href="./images/icons/sprite6.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden .modal-window" data-modal>
       <div class="modal">
@@ -785,6 +812,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
