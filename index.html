@@ -16,14 +16,14 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <!-- <body>
+  <body>
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="nav">
           <a class="logo page-header__logo" href="./index.html"
             ><span class="logo-studio">Web</span>Studio</a
           >
-          <ul class="menu menu__list">
+          <!-- <ul class="menu menu__list">
             <li class="menu__item">
               <a class="link link--nav-decoration" href="#about">Студия</a>
             </li>
@@ -35,9 +35,10 @@
             <li class="menu__item">
               <a class="link header-decoration" href="#contacts">Контакты</a>
             </li>
-          </ul>
+          </ul> -->
         </nav>
-        <ul class="menu list contacts__list">
+        <button class="menu-open">0</button>
+        <!-- <ul class="menu list contacts__list">
           <li class="menu__item contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
               <svg class="auth-nav-icon" width="16" height="12">
@@ -54,9 +55,31 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
-    </header> -->
+      <div class="mobile-menu is-hidden">
+        <div class="container">
+          <button class="menu-close">x</button>
+          <ul class="mobile-menu-list list">
+            <li><a class="link" href="">Студия</a></li>
+            <li><a class="link" href=""></a>Портфолио</li>
+            <li><a class="link" href=""></a>Контакты</li>
+          </ul>
+          <div class="mobile-bottom">
+            <ul class="mobile-contact-list list">
+              <li><a class="link" href="">+38 096 111 11 11</a></li>
+              <li><a class="link" href=""></a>info@devstudio.com</li>
+            </ul>
+            <ul class="mobile-social-list list">
+              <li><a class="link" href="">Instagram</a></li>
+              <li><a class="link" href=""></a>Twitter</li>
+              <li><a class="link" href=""></a>Facebook</li>
+              <li><a class="link" href=""></a>Linkedin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="block block__dark-section">
         <div class="hero__container">
@@ -70,7 +93,7 @@
       </section>
 
       <!-- СЕКЦИЯ С ИКОНКАМИ -->
-      
+
       <section class="section about" id="about">
         <div class="container about__list">
           <ul class="list about__card-set card-set">
@@ -191,7 +214,7 @@
               <div class="team__name">
                 <h3 class="team__name-item">Игорь Демьяненко</h3>
                 <p class="team__job-item" lang="en">Product Designer</p>
-                <ul class="list social-icons">
+                <ul class="social-icons">
                   <li class="social-icons__item">
                     <a
                       href=""
@@ -261,7 +284,7 @@
               <div class="team__name">
                 <h3 class="team__name-item">Ольга Репина</h3>
                 <p class="team__job-item" lang="en">Frontend Developer</p>
-                <ul class="list social-icons">
+                <ul class="social-icons">
                   <li class="social-icons__item">
                     <a
                       href=""
@@ -331,7 +354,7 @@
               <div class="team__name">
                 <h3 class="team__name-item">Николай Тарасов</h3>
                 <p class="team__job-item" lang="en">Marketing</p>
-                <ul class="list social-icons">
+                <ul class="social-icons">
                   <li class="social-icons__item">
                     <a
                       href=""
@@ -401,7 +424,7 @@
               <div class="team__name">
                 <h3 class="team__name-item">Михаил Ермаков</h3>
                 <p class="team__job-item" lang="en">UI Designer</p>
-                <ul class="list social-icons">
+                <ul class="social-icons">
                   <li class="social-icons__item">
                     <a
                       href=""
@@ -548,7 +571,7 @@
       </div>
     </section>
 
-<!-- ФУТЕР -->
+    <!-- ФУТЕР -->
 
     <!-- <footer class="footer">
       <div class="footer-div container">
@@ -645,7 +668,6 @@
         </div>
       </div>
     </footer> -->
-
 
     <div class="backdrop is-hidden .modal-window" data-modal>
       <div class="modal">
@@ -763,5 +785,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

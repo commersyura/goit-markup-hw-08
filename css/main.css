@@ -413,6 +413,10 @@ img {
 
 .social-icons {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 .social-icons__footer {
@@ -644,7 +648,8 @@ img {
 
 .modal {
   background-color: #ffffff;
-  width: 528px;
+  width: 95%;
+  height: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -652,6 +657,16 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-container {
@@ -1174,9 +1189,9 @@ img {
   align-items: center;
 }
 
-.team-item {
+.team__card-set {
+  display: inline-flex;
   text-align: center;
-  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 .item__team {
@@ -1214,6 +1229,7 @@ img {
 .page-header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page-header {
@@ -1222,8 +1238,74 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.mobile-menu {
+  padding: 40px 0;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.mobile-menu .container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu-list {
+  margin-bottom: 40px;
+}
+.mobile-menu-list li a {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu-list li:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.mobile-contact-list li a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-contact-list li::not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.mobile-social-list {
+  display: flex;
+}
+.mobile-social-list li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .header-decoration {
   color: #212121;
+}
+
+.menu-close {
+  position: absolute;
+  right: 15px;
+  top: -21px;
 }
 
 .portfolio__items {
