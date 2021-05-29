@@ -37,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <button class="menu-open">0</button>
+       
         <ul class="menu list contacts__list">
           <li class="menu__item contacts__item">
             <a class="link contacts__link" href="mailto:info@devstudio.com">
@@ -57,52 +57,47 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu is-hidden">
-        <div class="container">
-          <button
-            type="button"
-            class="menu-close"
-            aria-expanded="false"
-            aria-controls="mob-menu"
-            menu-open
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Кнопка мобильного меню"
-              class="cross-icon"
-            >
-              <use href="./images/icons/sprite.svg#cross"></use>
-            </svg>
-            <svg
-              width="40"
-              height="40"
-              aria-label="Кнопка мобильного меню"
-              class="burger-icon"
-            >
-              <use href="./images/icons/sprite.svg#burger"></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu-list list">
-            <li><a class="link" href="">Студия</a></li>
-            <li><a class="link" href=""></a>Портфолио</li>
-            <li><a class="link" href=""></a>Контакты</li>
-          </ul>
-          <div class="mobile-bottom">
-            <ul class="mobile-contact-list list">
-              <li><a class="link" href="">+38 096 111 11 11</a></li>
-              <li><a class="link" href=""></a>info@devstudio.com</li>
-            </ul>
-            <ul class="mobile-social-list list">
-              <li><a class="link" href="">Instagram</a></li>
-              <li><a class="link" href=""></a>Twitter</li>
-              <li><a class="link" href=""></a>Facebook</li>
-              <li><a class="link" href=""></a>Linkedin</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+   
+      <button class="mobile-menu__btn" data-menu-button> 
+        <svg class="menu-btn__icon" width="40" height="40">
+          <use class="menu-btn__icon-close" href="./images/icons/sprite.svg#cross"></use>
+          <use class="menu-btn__icon-menu" href="./images/icons/sprite.svg#burger"></use>
+        </svg> </button>
+      
     </header>
+    <div class="mobile-menu" data-menu>
+      <!-- <div class="container"> -->
+      <!-- <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item"><a class="link" href="#about">Студия</a></li>
+        <li class="mobile-menu__item"><a class="link" href="#price">Портфолио</a></li>
+        <li class="mobile-menu__item"><a class="link" href="#team">Контакты</a></li>
+             </ul>
+      <a class="link" href="">+38 096 111 11 11</a>
+      <a class="link" href="">info@devstudio.com</a>
+      <ul class="list socials">
+        <li class="socials__item">
+          <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="link socials__link" href="" target="_blank" rel="noopener noreferrer">
+            Linkedin
+          </a>
+        </li>
+      </ul> -->
+      <!-- </div> -->
+    </div>
     <main>
       <section class="block block__dark-section">
         <div class="hero__container">
