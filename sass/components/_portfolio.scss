@@ -1,0 +1,29 @@
+.portfolio {
+  &__services {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
+  }
+  &__services-list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: -15px;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
+  }
+  &__service-item {
+    margin-left: 8px;
+    margin-top: 15px;
+  }
+}

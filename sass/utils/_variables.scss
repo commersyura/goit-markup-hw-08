@@ -1,14 +1,17 @@
-:root {
-  --main-text-cl: #757575;
-  --title-cl: #212121;
-  --accent-cl: #2196f3;
-  --alt-text-cl: #ffffff, 60 %;
-  --alt-title-cl: #ffffff;
-
-  --dark-bg: #2f303a;
-  --second-bg: #f5f4fa;
-  --main-bg: #e5e5e5;
-
-  --main-font: "Roboto", sans-serif;
-  --second-font: "Raleway", sans-serif;
-}
+$primary-text-color: #212121;
+$additional-text-color: #757575;
+$accent-color: #2196f3;
+$bg-color: #2f303a;
+$primary-white-color: #ffffff;
+$primary-black-color: #000000;
+$contacts-color: rgba(255, 255, 255, 0.6);
+$buttons-color: #f5f4fa;
+$border-color: #eeeeee;
+$line-color: #ececec;
+$overlay-color: rgba(47, 48, 58, 0.4);
+$social-links-color: #afb1b8;
+$bg-footer-color: rgba(255, 255, 255, 0.1);
+$backdrop-color: rgba(0, 0, 0, 0.2);
+$active-buttons-color: #188ce8;
+$card-set-gap: 30px;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

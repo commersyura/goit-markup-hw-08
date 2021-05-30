@@ -1,14 +1,14 @@
-.footer-div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.container-footer {
-  display: flex;
+// .footer-div {
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: flex-start;
+// }
+// .container-footer {
+//   display: flex;
 
-  // width: 231px;
-  // height: 132px;
-  // display: block;
+//   // width: 231px;
+//   // height: 132px;
+//   // display: block;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     align-items: center;
@@ -21,21 +21,23 @@
   }
 }
 .footer__address-block {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 70px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-right: 70px;
   @media screen and (max-width: 767px) {
+    // text-align: center;
+    // justify-content: center;
+    // margin-right: 0;
+    // width: 100%;
     text-align: center;
-    justify-content: center;
-    margin-right: 0;
-    width: 100%;
     margin-bottom: 60px;
   }
 }
 .subscribe-email {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   margin-left: 93px;
+  text-align: center;
   @media screen and (max-width: 767px) {
     width: 100%;
     margin: 0;
@@ -82,24 +84,24 @@
   fill: #ffffff;
 }
 .footer {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg);
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (max-width: 767px) {
-    height: 100%;
+    // height: 100%;
   }
   @media screen and (max-width: 768px) {
-    height: 100%;
+    // height: 100%;
   }
-  @media screen and (max-width: 1200px) {
-    height: 252px;
-  }
+  // @media screen and (max-width: 1200px) {
+  //   // height: 252px;
+  // }
 }
 .invite-item {
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.03em;
   font-weight: bold;
   font-size: 14px;
@@ -111,5 +113,5 @@
 .address-item-place {
   color: #ffffff;
   margin-bottom: 10px;
-  width: 231px;
+  // width: 231px;
 }

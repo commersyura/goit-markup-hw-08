@@ -1,0 +1,72 @@
+.advantages {
+  &__list {
+    @extend %list;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: -15px;
+    }
+  }
+  &__list-item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+      }
+    }
+  }
+  &__thumb {
+    margin-bottom: 30px;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+    height: 120px;
+
+    text-align: center;
+
+    background-color: $buttons-color;
+  }
+  &__list-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__list-text {
+    margin: 0;
+    padding: 0;
+
+    color: $additional-text-color;
+
+    line-height: 1.71;
+  }
+  &__section-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}

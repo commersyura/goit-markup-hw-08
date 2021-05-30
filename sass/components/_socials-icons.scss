@@ -6,7 +6,8 @@
   padding-left: 0;
 }
 .social-icons__footer {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 .social-icons-svg {
   width: 20px;
